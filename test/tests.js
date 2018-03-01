@@ -45,21 +45,11 @@ describe('Search engine tests', function() {
     shoovWebdrivercss.after(done);
   });
 
-  it('should show the Google main search page',function(done) {
+  it('should render nl-be homepage',function(done) {
     client
-      .url('https://www.google.com/?gfe_rd=cr&ei=ku8bVbG3K-SG8QeFmICQDg&gws_rd=cr&fg=1')
+      .url('https://www.atlascopco.com/nl-be')
       .webdrivercss(testName, {
-        name: 'google'
-      }, shoovWebdrivercss.processResults)
-      .call(done);
-
-  });
-
-  it('should show the DuckDuckGo main search page',function(done) {
-    client
-      .url('https://duckduckgo.com/')
-      .webdrivercss(testName, {
-        name: 'duckduck'
+        name: 'homepage-nl-be'
       }, shoovWebdrivercss.processResults)
       .call(done);
 
