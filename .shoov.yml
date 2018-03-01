@@ -1,0 +1,2 @@
+script:
+  - PROVIDER_PREFIX=browserstack SELECTED_CAPS=chrome mocha
